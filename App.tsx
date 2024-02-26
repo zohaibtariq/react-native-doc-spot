@@ -2,6 +2,7 @@ import React from 'react';
 import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import FlatCards from './components/FlatCards';
 import ElevatedCards from './components/ElevatedCards';
+import LightDarkMode from './components/LightDarkMode';
 
 function App(): React.JSX.Element {
   return (
@@ -9,6 +10,7 @@ function App(): React.JSX.Element {
       <ScrollView>
         <FlatCards />
         <ElevatedCards />
+        <LightDarkMode />
       </ScrollView>
     </SafeAreaView>
   );
