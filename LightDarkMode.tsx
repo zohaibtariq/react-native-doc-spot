@@ -2,7 +2,7 @@ import React, {JSX, useState} from 'react';
 import {View, SafeAreaView, Text, useColorScheme, Button} from 'react-native';
 import {globalStyles} from './styles';
 
-const AppPro = (): JSX.Element => {
+const LightDarkMode = (): JSX.Element => {
   const isDarkMode = useColorScheme() === 'dark';
   const [getDarkMode, setDarkMode] = useState(isDarkMode);
   const toggleModes = () => {
@@ -32,4 +32,4 @@ const AppPro = (): JSX.Element => {
   );
 };
 
-export default AppPro;
+export default LightDarkMode;
