@@ -60,4 +60,12 @@ export default StyleSheet.create({
     shadowOpacity: 0.4,
     shadowRadius: 100,
   },
+  fancyCard: {},
+  cardImage: {
+    width: 100,
+  },
+  cardBody: {},
+  cardLabel: {},
+  cardTitle: {},
+  cardDesc: {},
 });
