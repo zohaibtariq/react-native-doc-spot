@@ -2,16 +2,16 @@ import React from 'react';
 import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import FlatCards from './components/FlatCards';
 import ElevatedCards from './components/ElevatedCards';
-import LightDarkMode from './components/LightDarkMode';
-import FancyCard from './components/FancyCard.tsx';
+// import LightDarkMode from './components/LightDarkMode';
+import FancyCard from './components/FancyCard';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[styles.container]}>
       <ScrollView>
         <FlatCards />
         <ElevatedCards />
-        <LightDarkMode />
+        {/*<LightDarkMode />*/}
         <FancyCard />
       </ScrollView>
     </SafeAreaView>

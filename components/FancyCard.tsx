@@ -3,20 +3,27 @@ import React from 'react';
 import cardStyles from '../styles/cardStyles';
 
 export default function FancyCard() {
+  console.log('Rendering FancyCard...');
   return (
     <View>
-      <Text style={cardStyles.cardHeadingText}>Trending Places</Text>
+      <Text style={[cardStyles.cardHeadingText]}>Trending Places</Text>
       <View style={[cardStyles.card, cardStyles.fancyCard]}>
         <Image
+          // resizeMode="cover"
+          resizeMode="contain"
+          // resizeMode="stretch"
+          // resizeMode="repeat"
+          // resizeMode="center"
           source={{
-            uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9FFYqtCxKKxd0mtU-xd6tVTq4E--3mqR-w&usqp=CAU',
+            uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-stxOsrPINOmDI6P9uVvReI32NJ3SpL-MEno_E2rN_QLFK5p95SvlMmdfUrrU-UEFeg&usqp=CAU',
           }}
-          style={cardStyles.cardImage}
+          style={[cardStyles.cardImage]}
         />
-        <View style={cardStyles.cardBody}>
-          <Text style={cardStyles.cardLabel}>Hawa Mahal</Text>
-          <Text style={cardStyles.cardTitle}>Hawa Mahal</Text>
-          <Text style={cardStyles.cardDesc}>Hawa Mahal</Text>
+        <View style={[cardStyles.cardBody]}>
+          <Text style={[cardStyles.cardLabel]}>Hawa Mahal 1</Text>
+          <Text style={[cardStyles.cardTitle]}>Hawa Mahal 2</Text>
+          <Text style={[cardStyles.cardDesc]}>Hawa Mahal 3</Text>
+          <Text style={[cardStyles.cardFooter]}>Hawa Mahal 4</Text>
         </View>
       </View>
     </View>

@@ -39,18 +39,19 @@ export default StyleSheet.create({
 
   /* Card */
   card: {
-    height: 100,
-    width: '31.2%',
-    justifyContent: 'center',
-    alignItems: 'center',
+    /*height: 100,*/
+    // width: '31.2%',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     borderRadius: 6,
-    margin: 4,
   },
   flatCard: {
     width: '31.2%',
+    margin: 4,
   },
   elevatedCard: {
     width: 100,
+    margin: 4,
     elevation: 5,
     shadowOffset: {
       width: 1,
@@ -60,12 +61,16 @@ export default StyleSheet.create({
     shadowOpacity: 0.4,
     shadowRadius: 100,
   },
-  fancyCard: {},
+  fancyCard: {
+    width: '100%',
+  },
   cardImage: {
-    width: 100,
+    width: '100%',
+    height: 200,
   },
   cardBody: {},
   cardLabel: {},
   cardTitle: {},
   cardDesc: {},
+  cardFooter: {},
 });
