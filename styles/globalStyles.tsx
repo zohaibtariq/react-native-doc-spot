@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-export const globalStyles = StyleSheet.create({
+export default StyleSheet.create({
   text: {
     fontSize: 16,
     // fontWeight: 'bold',
@@ -23,10 +23,15 @@ export const globalStyles = StyleSheet.create({
   lightText: {
     color: '#FFFFFF',
   },
+  bodyBgColor: {
+    // backgroundColor: '#DAE0E2',
+    backgroundColor: '#EAF0F1',
+    // backgroundColor: '#A4B0BD',
+  },
   container: {
     // flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     height: '100%',
     width: '100%',
     // display: 'flex',

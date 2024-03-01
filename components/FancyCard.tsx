@@ -7,10 +7,15 @@ export default function FancyCard() {
   return (
     <View>
       <Text style={[cardStyles.cardHeadingText]}>Trending Places</Text>
-      <View style={[cardStyles.card, cardStyles.fancyCard]}>
+      <View
+        style={[
+          cardStyles.card,
+          cardStyles.fancyCard,
+          cardStyles.elevationWithShadow,
+        ]}>
         <Image
           // resizeMode="cover"
-          resizeMode="contain"
+          // resizeMode="contain"
           // resizeMode="stretch"
           // resizeMode="repeat"
           // resizeMode="center"
@@ -20,10 +25,19 @@ export default function FancyCard() {
           style={[cardStyles.cardImage]}
         />
         <View style={[cardStyles.cardBody]}>
-          <Text style={[cardStyles.cardLabel]}>Hawa Mahal 1</Text>
-          <Text style={[cardStyles.cardTitle]}>Hawa Mahal 2</Text>
-          <Text style={[cardStyles.cardDesc]}>Hawa Mahal 3</Text>
-          <Text style={[cardStyles.cardFooter]}>Hawa Mahal 4</Text>
+          <Text style={[cardStyles.cardTitle, cardStyles.textBlackColor]}>
+            Hawa Mahal
+          </Text>
+          <Text style={[cardStyles.cardLabel, cardStyles.textBlackColor]}>
+            Pink City, Jaipur
+          </Text>
+          <Text style={[cardStyles.cardDesc, cardStyles.textBlackColor]}>
+            The Hawa Mahal is a place in the city of Jaipur, India. Built from
+            red and pink sandstone, it is on the edge of the City Palace.
+          </Text>
+          <Text style={[cardStyles.cardFooter, cardStyles.textBlackColor]}>
+            12 mins away
+          </Text>
         </View>
       </View>
     </View>

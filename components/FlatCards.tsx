@@ -8,19 +8,34 @@ export default function FlatCards(): React.JSX.Element {
       <Text style={cardStyles.cardHeadingText}>Flat Cards Heading</Text>
       <View style={cardStyles.flatCardContainer}>
         <View
-          style={[cardStyles.card, cardStyles.flatCard, cardStyles.cardRed]}>
+          style={[
+            cardStyles.card,
+            cardStyles.flatCard,
+            cardStyles.cardRed,
+            cardStyles.flexCenterCenter,
+          ]}>
           <Text style={(cardStyles.cardText, cardStyles.flatCardText)}>
             Red
           </Text>
         </View>
         <View
-          style={[cardStyles.card, cardStyles.flatCard, cardStyles.cardBlue]}>
+          style={[
+            cardStyles.card,
+            cardStyles.flatCard,
+            cardStyles.cardBlue,
+            cardStyles.flexCenterCenter,
+          ]}>
           <Text style={(cardStyles.cardText, cardStyles.flatCardText)}>
             Blue
           </Text>
         </View>
         <View
-          style={[cardStyles.card, cardStyles.flatCard, cardStyles.cardGreen]}>
+          style={[
+            cardStyles.card,
+            cardStyles.flatCard,
+            cardStyles.cardGreen,
+            cardStyles.flexCenterCenter,
+          ]}>
           <Text style={(cardStyles.cardText, cardStyles.flatCardText)}>
             Green
           </Text>
