@@ -1,6 +1,6 @@
 import React, {JSX, useState} from 'react';
 import {View, SafeAreaView, Text, useColorScheme, Button} from 'react-native';
-import {globalStyles} from '../styles/styles';
+import {globalStyles} from '../styles/globalStyles.tsx';
 
 const LightDarkMode = (): JSX.Element => {
   const isDarkMode = useColorScheme() === 'dark';

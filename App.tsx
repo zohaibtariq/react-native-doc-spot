@@ -1,26 +1,23 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
+import {SafeAreaView, ScrollView} from 'react-native';
 import FlatCards from './components/FlatCards';
 import ElevatedCards from './components/ElevatedCards';
-import LightDarkMode from './components/LightDarkMode';
+// import LightDarkMode from './components/LightDarkMode';
+import FancyCard from './components/FancyCard';
+import globalStyles from './styles/globalStyles';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
+    <SafeAreaView style={[globalStyles.bodyBgColor]}>
+      <ScrollView style={[globalStyles.container]}>
         <FlatCards />
         <ElevatedCards />
-        <LightDarkMode />
+        {/*<LightDarkMode />*/}
+        <FancyCard />
+        <FancyCard />
       </ScrollView>
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    width: '100%',
-    height: '100%',
-  },
-});
 
 export default App;

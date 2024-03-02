@@ -4,7 +4,7 @@ import cardStyles from '../styles/cardStyles';
 
 export default function ElevatedCards(): React.JSX.Element {
   return (
-    <View style={cardStyles.cardContainer}>
+    <View style={[cardStyles.cardContainer]}>
       <Text style={cardStyles.cardHeadingText}>Elevated Cards Heading</Text>
       <ScrollView
         horizontal={true}
@@ -14,7 +14,9 @@ export default function ElevatedCards(): React.JSX.Element {
           style={[
             cardStyles.card,
             cardStyles.elevatedCard,
+            cardStyles.elevationWithShadow,
             cardStyles.cardRed,
+            cardStyles.flexCenterCenter,
           ]}>
           <Text style={(cardStyles.cardText, cardStyles.elevatedCardText)}>
             Red
@@ -25,6 +27,7 @@ export default function ElevatedCards(): React.JSX.Element {
             cardStyles.card,
             cardStyles.elevatedCard,
             cardStyles.cardBlue,
+            cardStyles.flexCenterCenter,
           ]}>
           <Text style={(cardStyles.cardText, cardStyles.elevatedCardText)}>
             Blue
@@ -35,6 +38,7 @@ export default function ElevatedCards(): React.JSX.Element {
             cardStyles.card,
             cardStyles.elevatedCard,
             cardStyles.cardGreen,
+            cardStyles.flexCenterCenter,
           ]}>
           <Text style={(cardStyles.cardText, cardStyles.elevatedCardText)}>
             Green
@@ -45,6 +49,7 @@ export default function ElevatedCards(): React.JSX.Element {
             cardStyles.card,
             cardStyles.elevatedCard,
             cardStyles.cardRed,
+            cardStyles.flexCenterCenter,
           ]}>
           <Text style={(cardStyles.cardText, cardStyles.elevatedCardText)}>
             Red
@@ -55,6 +60,7 @@ export default function ElevatedCards(): React.JSX.Element {
             cardStyles.card,
             cardStyles.elevatedCard,
             cardStyles.cardBlue,
+            cardStyles.flexCenterCenter,
           ]}>
           <Text style={(cardStyles.cardText, cardStyles.elevatedCardText)}>
             Blue
@@ -65,6 +71,7 @@ export default function ElevatedCards(): React.JSX.Element {
             cardStyles.card,
             cardStyles.elevatedCard,
             cardStyles.cardGreen,
+            cardStyles.flexCenterCenter,
           ]}>
           <Text style={(cardStyles.cardText, cardStyles.elevatedCardText)}>
             Green
