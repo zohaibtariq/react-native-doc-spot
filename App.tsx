@@ -8,8 +8,8 @@ import globalStyles from './styles/globalStyles';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView style={[globalStyles.container, globalStyles.bodyBgColor]}>
-      <ScrollView>
+    <SafeAreaView style={[globalStyles.bodyBgColor]}>
+      <ScrollView style={[globalStyles.container]}>
         <FlatCards />
         <ElevatedCards />
         {/*<LightDarkMode />*/}

@@ -1,20 +1,24 @@
-import {Dimensions, StyleSheet} from 'react-native';
-
-const screenWidth = Dimensions.get('window').width;
-const width = screenWidth * 0.96;
+import {StyleSheet} from 'react-native';
+import variables from './variables';
+// import {Dimensions} from 'react-native';
+// const screenWidth = Dimensions.get('window').width;
+// const width = screenWidth * 0.96;
 
 export default StyleSheet.create({
   cardHeadingText: {
     fontSize: 16,
     fontWeight: 'bold',
-    paddingHorizontal: 0,
-    alignSelf: 'stretch', // Ensure the heading takes full width
-    paddingLeft: 0,
     color: '#555',
-    marginLeft: 4,
+    // alignSelf: 'stretch', // Ensure the heading takes full width
+    // paddingLeft: 0,
+    // paddingHorizontal: 0,
+    // marginLeft: 0,
+    padding: 0,
+    margin: 0,
   },
   cardContainer: {
     flex: 1,
+    marginHorizontal: variables.horizontalSpacing,
   },
 
   /* BG Color Cards */
@@ -46,15 +50,18 @@ export default StyleSheet.create({
     // width: '31.2%',
     borderRadius: 6,
     marginVertical: 12,
-    marginHorizontal: 10,
+    // marginHorizontal: 0,
     // marginHorizontal: 10,
     // marginLeft: '1%',
-    marginLeft: screenWidth * 0.018,
+    // marginLeft: screenWidth * 0.018,
+    // marginLeft: 0,
   },
   flatCard: {
-    width: '31.2%',
-    margin: 4,
+    width: '31.3%',
+    // marginTop: 4,
+    // marginBottom: 4,
     height: 100,
+    marginRight: variables.horizontalSpacing,
   },
   flexCenterCenter: {
     justifyContent: 'center',
@@ -62,8 +69,10 @@ export default StyleSheet.create({
   },
   elevatedCard: {
     width: 100,
-    margin: 4,
+    // marginTop: 4,
+    // marginBottom: 4,
     height: 100,
+    marginRight: variables.horizontalSpacing,
   },
   elevationWithShadow: {
     elevation: 5,
@@ -76,20 +85,21 @@ export default StyleSheet.create({
     shadowRadius: 100,
   },
   fancyCard: {
-    width: width, // '96%', // width
+    // width: width, // '96%', // width
+    width: '100%', // '96%', // width
     backgroundColor: '#FFF',
   },
   cardImage: {
     width: '100%',
     height: 200,
-    marginBottom: 8,
+    // marginBottom: 8,
     borderTopLeftRadius: 6,
     borderTopRightRadius: 6,
   },
   cardBody: {
     flex: 1,
     flexGrow: 1,
-    paddingHorizontal: 12,
+    padding: 10,
   },
   cardTitle: {
     fontSize: 22,
@@ -108,7 +118,7 @@ export default StyleSheet.create({
     flexShrink: 1,
   },
   cardFooter: {
-    paddingBottom: 20,
+    // paddingBottom: 10,
   },
   textBlackColor: {
     color: '#000',

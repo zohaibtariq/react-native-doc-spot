@@ -4,7 +4,7 @@ import cardStyles from '../styles/cardStyles';
 
 export default function FlatCards(): React.JSX.Element {
   return (
-    <View style={cardStyles.cardContainer}>
+    <View style={[cardStyles.cardContainer]}>
       <Text style={cardStyles.cardHeadingText}>Flat Cards Heading</Text>
       <View style={cardStyles.flatCardContainer}>
         <View

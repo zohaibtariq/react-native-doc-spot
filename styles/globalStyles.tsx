@@ -25,6 +25,7 @@ export default StyleSheet.create({
   },
   bodyBgColor: {
     // backgroundColor: '#DAE0E2',
+    // backgroundColor: '#FFF',
     backgroundColor: '#EAF0F1',
     // backgroundColor: '#A4B0BD',
   },

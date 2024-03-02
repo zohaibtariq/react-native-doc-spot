@@ -4,7 +4,7 @@ import cardStyles from '../styles/cardStyles';
 
 export default function ElevatedCards(): React.JSX.Element {
   return (
-    <View style={cardStyles.cardContainer}>
+    <View style={[cardStyles.cardContainer]}>
       <Text style={cardStyles.cardHeadingText}>Elevated Cards Heading</Text>
       <ScrollView
         horizontal={true}

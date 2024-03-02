@@ -5,7 +5,7 @@ import cardStyles from '../styles/cardStyles';
 export default function FancyCard() {
   console.log('Rendering FancyCard...');
   return (
-    <View>
+    <View style={[cardStyles.cardContainer]}>
       <Text style={[cardStyles.cardHeadingText]}>Trending Places</Text>
       <View
         style={[
